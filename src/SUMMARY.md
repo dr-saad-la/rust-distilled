@@ -2,24 +2,24 @@
 
 # Introduction
 
--   [Introduction](./introduction.md)
+-   [Introduction](introduction.md)
 
 # Rust Environment Setup
 
 -   [Chapter_01](chapter_01/introduction.md)
-    -   [EnvironmentSetup](chapter_01/env_setup.md)
-    -
+    -   [Rust Environment Setup](chapter_01/install_rust.md)
+    -   [Setup Rust Kernel](chapter_01/setup_jupyterlab.md)
+    -   [Update Rust](chapter_01/update_rust.md)
+    -   [Uninstall Rust](chapter_01/uninstall_rust.md)
 
 # Rust Command Line Tools
 
 -   [Command Line Tool](chapter_02/introduction.md)
-    -   [init](chapter_02/init.md)
+    -   [help](chapter_02/cargo_help.md)
+    -   [create](chapter_02/create.md)
+    -   [check](chapter_02/check.md)
     -   [build](chapter_02/build.md)
-    -   [watch](chapter_02/watch.md)
-    -   [serve](chapter_02/serve.md)
-    -   [test](chapter_02/test.md)
     -   [clean](chapter_02/clean.md)
-    -   [completions](chapter_02/completions.md)
 
 # Rust Essentials
 
@@ -27,3 +27,7 @@
     -   [integer_dtypes](chapter_03/integer_dtypes.md)
     -   [Floats](chapter_03/float_dtypes.md)
     -   [Characters](chapter_03/characters_dtypes.md)
+
+# Rust Compound Data Types
+
+-   [Chapter_04](chapter_04/introduction.md)
