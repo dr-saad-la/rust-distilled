@@ -4,6 +4,16 @@
 [![Build Status](https://github.com/dr-saad-la/rust-distilled/actions/workflows/mdbook.yml/badge.svg)](https://github.com/dr-saad-la/rust-distilled/actions)
 [![License](https://img.shields.io/github/license/dr-saad-la/repo.svg)](LICENSE)
 ![GitHub stars](https://img.shields.io/github/stars/dr-saad-la/rust-distilled?style=social)
+![GitHub issues](https://img.shields.io/github/issues/dr-saad-la/rust-distilled)
+![GitHub forks](https://img.shields.io/github/forks/dr-saad-la/rust-distilled?style=social)
+![GitHub watchers](https://img.shields.io/github/watchers/dr-saad-la/rust-distilled?style=social)
+![GitHub contributors](https://img.shields.io/github/contributors/dr-saad-la/rust-distilled)
+![GitHub last commit](https://img.shields.io/github/last-commit/dr-saad-la/rust-distilled)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/dr-saad-la/rust-distilled)
+![Maintenance](https://img.shields.io/maintenance/yes/2024)
+![Platform](https://img.shields.io/badge/platform-macOS%20%7C%20Linux%20%7C%20Windows-blue)
+![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/dr-saad-la/rust-distilled)
 
 ## Introduction
 
