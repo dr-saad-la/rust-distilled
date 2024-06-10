@@ -107,8 +107,8 @@ This book and its content are protected by international copyright laws. No part
 
 **Contact Information**:
 
-[Saad Laouadi]  
-[dr.saad.laouadi@gmail.com]
+[Saad Laouadi](mailto:dr.saad.laouadi@gmail.com)  
+dr.saad.laouadi@gmail.com
 
 ---
 

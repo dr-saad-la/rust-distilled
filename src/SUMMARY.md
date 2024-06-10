@@ -6,7 +6,9 @@
 
 # Rust Environment Setup
 
--   [Chapter 1](./chapter_1.md)
+-   [Chapter_01](chapter_01/introduction.md)
+    -   [EnvironmentSetup](chapter_01/env_setup.md)
+    -
 
 # Rust Command Line Tools
 
