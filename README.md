@@ -1,8 +1,9 @@
 # Rust Distilled: A Comprehensive Guide to the Rust Programming Language
 
-[![Build Status](https://github.com/dr-saad-la/repo/actions/workflows/ci.yml/badge.svg)](https://github.com/dr-saad-la/repo/actions)
+![rust-distilled](https://img.shields.io/badge/rust-distilled-green.svg)
+[![Build Status](https://github.com/dr-saad-la/rust-distilled/actions/workflows/mdbook.yml/badge.svg)](https://github.com/dr-saad-la/rust-distilled/actions)
 [![License](https://img.shields.io/github/license/dr-saad-la/repo.svg)](LICENSE)
-![GitHub stars](https://img.shields.io/github/stars/dr-saad-la/repo?style=social)
+![GitHub stars](https://img.shields.io/github/stars/dr-saad-la/rust-distilled?style=social)
 
 ## Introduction
 
