@@ -39,10 +39,10 @@ cargo build
     - The executable binary is located in the target/release directory.
  
 To create a release build, use the `--release` flag:
-	
-	```bash
-	cargo build --release
-	```
+
+```bash
+cargo build --release
+```
 
 ## Understanding the Build Directory Structure
 
@@ -59,21 +59,21 @@ To create a release build, use the `--release` flag:
 
 Building a Specific Binary:
 
-	```bash
-	cargo build --bin <binary-name>
-	```
+```bash
+cargo build --bin <binary-name>
+```
 
 Building the Library:
 
-	```bash
-	cargo build --lib
-	```
+```bash
+cargo build --lib
+```
 
 Building an Example:
 
-	```bash
-	cargo build --example <example-name>
-	```
+```bash
+cargo build --example <example-name>
+```
 
 **Incremental Builds**: Cargo supports incremental builds, which means it only recompiles the parts of your code that have changed. This feature significantly speeds up the build process, especially for large projects. Incremental builds are enabled by default.
 
@@ -174,4 +174,4 @@ Compiling simple_app v0.1.0 (/path/to/simple_app)
 
 ### Summary
 
-- The cargo build command is a powerful tool that simplifies the process of compiling Rust projects. It ensures that the code is compiled efficiently and correctly regardless of the project size. Hence, mastering this command options simplifies the development process a great deal. 
+The cargo build command is a powerful tool that simplifies the process of compiling Rust projects. It ensures that the code is compiled efficiently and correctly regardless of the project size. Hence, mastering this command options simplifies the development process a great deal. 
