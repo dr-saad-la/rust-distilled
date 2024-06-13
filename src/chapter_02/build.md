@@ -108,6 +108,70 @@ Building an Example:
 	cargo build
 	```
 
+## Practical Example
+
+- Let's create a simple Rust project to demonstrate the use of cargo build.
+
+- Step 1: Create a New Project
+
+```bash
+cargo new simple_app
+cd simple_app
+```
+
+- Step 2: Write Some Code
+    - Edit the src/main.rs file:
+
+```rust
+fn main() {
+    println!("Hello, world!");
+}
+```
+
+- Step 3: Build the Project
+    - Debug Build:
+
+```bash
+cargo build
+```
+
+```text
+Compiling simple_app v0.1.0 (/path/to/simple_app)
+    Finished dev [unoptimized + debuginfo] target(s) in 0.50s
+```
+
+- Release Build:
+
+```bash
+cargo build --release
+```
+
+```text
+Compiling simple_app v0.1.0 (/path/to/simple_app)
+    Finished release [optimized] target(s) in 0.75s
+```
+
+- Step 4: Run the Executable 
+	- Debug Build (Unix-like Systems)
+
+	```bash
+	./target/debug/simple_app
+	```
+	- Windows systems 
+	```bash
+	.\target\debug\simple_app.exe
+	```
+	- Release Build (Unix-like systems):
+
+	```bash
+	./target/release/simple_app
+	```
+
+	- Windows 
+	```bash
+	.\target\release\simple_app.exe
+	```
+
 ### Summary
 
 - The cargo build command is a powerful tool that simplifies the process of compiling Rust projects. It ensures that the code is compiled efficiently and correctly regardless of the project size. Hence, mastering this command options simplifies the development process a great deal. 
