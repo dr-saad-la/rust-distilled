@@ -2,7 +2,7 @@
    Integer Data Types in Rust
 </div>
 
-Throughout the chapters of this, function or tools to friendly format the output on the console, we define a function at the top the chapter, and this full will be used throughout the chapter or throughout the book.
+Throughout the chapters of this book, we define functions and tools to format console output in a user-friendly manner. At the beginning of each chapter, we introduce a function that will be used throughout the chapter and possibly throughout the entire book.
 
 ```Rust
 use std::any::type_name;
