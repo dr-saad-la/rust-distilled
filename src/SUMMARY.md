@@ -28,7 +28,7 @@
     -   [integer_dtypes](chapter_03/integer_dtypes.md)
     -   [Floats](chapter_03/float_dtypes.md)
     -   [Booleans](chapter_03/booleans.md)
-    -   [Characters](chapter_03/characters_dtypes.md)
+    -   [Characters](chapter_03/char_type.md)
     -   [Constants](chapter_03/constants.md)
     -   [Type conversion](chapter_03/type_conversion.md)
     -   [numeric operations](chapter_03/num_ops.md)
