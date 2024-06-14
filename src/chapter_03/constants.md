@@ -17,7 +17,6 @@ fn type_of<T>(_: T) -> &'static str {
 }
 ```
 
-
 Constants are immutable values that are known at **compile time** and do not change throughout the execution of a program. They are a fundamental part of many programming languages, and Rust provides robust support for them. This chapter will cover the details of using constants in Rust, including their syntax, scope, and some practical examples.
 
 ## What are Constants?
