@@ -14,7 +14,7 @@ Introduction
 
 # Rust Command Line Tools
 
--   [Command Line Tool](chapter_02/introduction.md)
+-   [Command Line Tool](chapter_02/intro.md)
     -   [help](chapter_02/cargo_help.md)
     -   [create rust app](chapter_02/new.md)
     -   [check](chapter_02/check.md)
