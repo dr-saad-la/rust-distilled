@@ -1,11 +1,10 @@
-<div style="text-align:center;font-size:22pt; font-weight:bold;color:white;border:solid black 1.5pt;background-color:#1e7263;">
-  The Cargo new Command
+<div style="text-align:center;font-size:22pt; font-weight:bold;color:white;border:solid black 1.5pt;background-color:#1e7263;">  
+    The Cargo new Command
 </div>
 
 ## The `new` Command
 
 The `new` command in `Cargo` is essential for initializing new Rust projects. It sets up the necessary directory structure and files, allowing you to start development quickly and efficiently. As part of Cargo, Rust's package manager and build system, `cargo new` streamlines the process of creating both binary and library projects.
-
 
 ### Using the `new` Command in Cargo
 
@@ -25,11 +24,9 @@ cargo help new
 
 You will see an output similar to the one below. To navigate through the manual, you can use the following options:
 
-* Press the Return key (Enter) to move line by line.
-* Press the Space key to browse the manual page by page.
-* Press `q` to quit the manual page.
-
-
+  * Press the Return key (Enter) to move line by line.
+  * Press the Space key to browse the manual page by page.
+  * Press `q` to quit the manual page
 
 ```text
 CARGO-NEW(1)                              General Commands Manual                             CARGO-NEW(1)
@@ -51,10 +48,8 @@ OPTIONS
    New Options
        --bin
            Create a package with a binary target (src/main.rs).  This is the default behavior.
-
        --lib
            Create a package with a library target (src/lib.rs).
-
        --edition edition
 :
 ```
