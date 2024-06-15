@@ -1,8 +1,8 @@
 # Summary
 
-# Introduction
+Introduction
 
--   [Introduction](introduction.md)
+-   [Introduction](intro.md)
 
 # Rust Environment Setup
 
