@@ -16,7 +16,7 @@
 
 -   [Command Line Tool](chapter_02/introduction.md)
     -   [help](chapter_02/cargo_help.md)
-    -   [create](chapter_02/create.md)
+    -   [create rust app](chapter_02/new.md)
     -   [check](chapter_02/check.md)
     -   [build](chapter_02/build.md)
     -   [clean](chapter_02/clean.md)
