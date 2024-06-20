@@ -300,4 +300,5 @@ main();
 
 ## Summary
 
-Constants in Rust provide a way to define immutable values that are known at compile time. They are essential for creating safe and predictable programs, as they ensure certain values remain constant throughout the program's execution.
+- Constants in Rust provide a way to define immutable values that are known at compile time.
+- They are essential for creating safe and predictable programs, as they ensure certain values remain constant throughout the program's execution.
