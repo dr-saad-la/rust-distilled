@@ -23,8 +23,7 @@ Introduction
     -   [Structuring Rust Applications](chap_02/rust_apps.md)
 
 # Rust Essentials
-
--   [Primitive Data Types](chap_03/introduction.md)
+-   [Primitive Data Types](chap_03/intro.md)
     -   [integer_dtypes](chap_03/integer_dtypes.md)
     -   [Floats](chap_03/float_dtypes.md)
     -   [Booleans](chap_03/booleans.md)

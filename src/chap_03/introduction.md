@@ -1,3 +1,1 @@
-# Introduction
-
-Data Types in Rust
+# Primitive Data Types
