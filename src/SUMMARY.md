@@ -32,7 +32,7 @@ Introduction
     -   [Type conversion](chap_03/type_conversion.md)
     -   [numeric operations](chap_03/num_ops.md)
     -   [character operations](chap_03/char_ops.md)
-    -   [Creating Ranges](chap_03/range.md)
+    -   [Creating Ranges](chap_03/ranges.md)
 
 # Control Flow
 
