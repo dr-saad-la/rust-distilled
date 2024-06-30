@@ -40,7 +40,7 @@ Introduction
 -   [Flow Control](chap_04/intro.md)
     -   [Conditionals](chap_04/conditionals.md)
         -   [If statement](chap_04/if_statement.md)
-        -   [If else](chap_04/if_else.md)
+        -   [else if](chap_04/else_if.md)
         -   [If else expression](chap_04/if_else_expression.md)
     -   [Loops](chap_04/loops.md)
         -   [loop](chap_04/loop.md)
