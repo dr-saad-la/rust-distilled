@@ -21,6 +21,7 @@ Introduction
     -   [build](chap_02/build.md)
     -   [clean](chap_02/clean.md)
     -   [Structuring Rust Applications](chap_02/rust_apps.md)
+    -   [Advanced Rust Projects Structure](chap_02/advanced_rust_apps.md)
 
 # Rust Essentials
 -   [Primitive Data Types](chap_03/intro.md)
