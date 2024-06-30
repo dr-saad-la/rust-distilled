@@ -42,6 +42,7 @@ Introduction
         -   [If statement](chap_04/if_statement.md)
         -   [else if](chap_04/else_if.md)
         -   [If else expression](chap_04/if_else_expression.md)
+        -   [The match statement](chap_04/match.md)
     -   [Loops](chap_04/loops.md)
         -   [loop](chap_04/loop.md)
         -   [for loop](chap_04/for_loop.md)
