@@ -1,0 +1,9 @@
+[package]
+name = "advanced_calculator"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+[lib]
+name = "advanced_calculator"
+path = "src/lib.rs"
