@@ -1,11 +1,20 @@
+#![allow(unused_imports)]
+
 mod calc;
+mod stats;
 mod tools;
+mod utils;
 
 use calc::{add, divide, log, multiply, power, sqrt, subtract, trig};
 use calc::{complex, exp, hyperbolic, hyperbolic_inverse, inverse_trig};
 use calc::{factorial, gcd_lcm};
 use num_complex::Complex;
 use tools::banner;
+
+use stats::{correlation, mean, median, mode, std};
+use utils::constants::{E, PI};
+use utils::conversion::{deg_to_rad, rad_to_deg};
+use utils::num_methods::derivative;
 
 fn main() {
     let a = 10.0;
@@ -48,6 +57,20 @@ fn main() {
     let complex_b = Complex::new(3.0, 4.0);
     let complex_sum = complex::add_complex(complex_a, complex_b);
 
+    let radians = deg_to_rad(180.0);
+    let degrees = rad_to_deg(PI);
+    let derivative_result = derivative(|x| x.powi(2), 2.0, 1e-5);
+
+    let data = [1.0, 2.0, 3.0, 4.0, 5.0];
+    let mean_result = mean::mean(&data);
+    let median_result = median::median(&data);
+    let mode_result = mode::mode(&data);
+    let stddev_result = std::std(&data);
+
+    let x = [1.0, 2.0, 3.0];
+    let y = [1.0, 2.0, 3.0];
+    let correlation_result = correlation::corr(&x, &y);
+
     println!("{:<20} {}", "sum:", sum);
     println!("{:<20} {}", "Difference:", difference);
     println!("{:<20} {}", "Product:", product);
@@ -85,4 +108,16 @@ fn main() {
     println!("GCD: {}", gcd_result);
     println!("LCM: {}", lcm_result);
     println!("Complex Sum: {}", complex_sum);
+
+    banner("*", 62, "Conversion Operations");
+    println!("Radians: {}", radians);
+    println!("Degrees: {}", degrees);
+    println!("Derivative: {}", derivative_result);
+
+    banner("*", 62, "Statistical Operations");
+    println!("Mean: {}", mean_result);
+    println!("Median: {}", median_result);
+    println!("Mode: {:?}", mode_result);
+    println!("Standard Deviation: {}", stddev_result);
+    println!("Correlation: {}", correlation_result);
 }

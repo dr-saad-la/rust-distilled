@@ -1,2 +1,4 @@
-pub mod calc;
-pub mod tools;
+mod calc;
+mod stats;
+mod tools;
+mod utils;
