@@ -1,6 +1,8 @@
 #![allow(unused_imports)]
 
 mod calc;
+mod linalg;
+mod plots;
 mod stats;
 mod tools;
 mod utils;
@@ -8,10 +10,14 @@ mod utils;
 use calc::{add, divide, log, multiply, power, sqrt, subtract, trig};
 use calc::{complex, exp, hyperbolic, hyperbolic_inverse, inverse_trig};
 use calc::{factorial, gcd_lcm};
+use calc::{fourier, polynomial};
+use linalg::{matrix, vector};
 use num_complex::Complex;
 use tools::banner;
 
+use plots::histogram;
 use stats::{correlation, mean, median, mode, std};
+use stats::{kurtosis, skewness, variance};
 use utils::constants::{E, PI};
 use utils::conversion::{deg_to_rad, rad_to_deg};
 use utils::num_methods::derivative;
@@ -71,6 +77,16 @@ fn main() {
     let y = [1.0, 2.0, 3.0];
     let correlation_result = correlation::corr(&x, &y);
 
+    // Vector
+    let vector_a = vector::Vector::new(vec![1.0, 2.0, 3.0]);
+    let vector_b = vector::Vector::new(vec![4.0, 5.0, 6.0]);
+    let vector_cross = vector_a.cross(&vector_b);
+    println!("Vector Cross Product: {:?}", vector_cross);
+
+    let polynomial_a = polynomial::Polynomial::new(vec![1.0, -3.0, 2.0]);
+    let polynomial_value = polynomial_a.evaluate(2.0);
+    println!("Polynomial Evaluation at x=2: {}", polynomial_value);
+
     println!("{:<20} {}", "sum:", sum);
     println!("{:<20} {}", "Difference:", difference);
     println!("{:<20} {}", "Product:", product);
@@ -120,4 +136,50 @@ fn main() {
     println!("Mode: {:?}", mode_result);
     println!("Standard Deviation: {}", stddev_result);
     println!("Correlation: {}", correlation_result);
+
+    // Print a welcome banner
+    banner("*", 30, "Advanced Calculator");
+
+    let data = [1.0, 2.0, 3.0, 4.0, 5.0];
+    let mean_result = mean::mean(&data);
+    let median_result = median::median(&data);
+    let mode_result = mode::mode(&data);
+    let stddev_result = std::std(&data);
+    let variance_result = variance::variance(&data);
+    let skewness_result = skewness::skewness(&data);
+    let kurtosis_result = kurtosis::kurtosis(&data);
+    let histogram_result = histogram::histogram(&data, 5);
+
+    println!("Mean: {}", mean_result);
+    println!("Median: {}", median_result);
+    println!("Mode: {:?}", mode_result);
+    println!("Standard Deviation: {}", stddev_result);
+    println!("Variance: {}", variance_result);
+    println!("Skewness: {}", skewness_result);
+    println!("Kurtosis: {}", kurtosis_result);
+    println!("Histogram: {:?}", histogram_result);
+
+    // Example usage of new features
+    let matrix_a = matrix::Matrix::new(2, 2, vec![1.0, 2.0, 3.0, 4.0]);
+    let matrix_b = matrix::Matrix::new(2, 2, vec![5.0, 6.0, 7.0, 8.0]);
+    let matrix_sum = matrix_a.add(&matrix_b);
+    println!("Matrix Sum: {:?}", matrix_sum);
+
+    let vector_a = vector::Vector::new(vec![1.0, 2.0, 3.0]);
+    let vector_b = vector::Vector::new(vec![4.0, 5.0, 6.0]);
+    let vector_cross = vector_a.cross(&vector_b);
+    println!("Vector Cross Product: {:?}", vector_cross);
+
+    let polynomial_a = polynomial::Polynomial::new(vec![1.0, -3.0, 2.0]);
+    let polynomial_value = polynomial_a.evaluate(2.0);
+    println!("Polynomial Evaluation at x=2: {}", polynomial_value);
+
+    let complex_input = vec![
+        Complex::new(0.0, 0.0),
+        Complex::new(1.0, 0.0),
+        Complex::new(0.0, 0.0),
+        Complex::new(-1.0, 0.0),
+    ];
+    let dft_output = fourier::dft(&complex_input);
+    println!("DFT Output: {:?}", dft_output);
 }
