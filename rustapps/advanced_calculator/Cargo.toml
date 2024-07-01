@@ -4,6 +4,7 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
+num-complex = "0.4.6"
 [lib]
 name = "advanced_calculator"
 path = "src/lib.rs"
