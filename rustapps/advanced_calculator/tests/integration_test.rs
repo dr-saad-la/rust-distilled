@@ -1,7 +1,8 @@
-use advanced_calculator::calc::{add, divide, multiply, subtract};
-use advanced_calculator::calc::{complex, exp, hyperbolic};
-use advanced_calculator::calc::{factorial, gcd_lcm};
-use advanced_calculator::calc::{log, power, sqrt, trig};
+use advanced_calculator::calc::{add, divide, multiply, power, sqrt, subtract};
+use advanced_calculator::calc::{complex, exp};
+use advanced_calculator::calc::{factorial, gcd_lcm, hyperbolic, log, trig};
+use advanced_calculator::plots::histogram;
+use advanced_calculator::stats::{kurtosis, mean, median, mode, skewness, std, variance};
 use num_complex::Complex;
 
 #[test]
@@ -35,6 +36,8 @@ fn test_power() {
 
 #[test]
 fn test_sqrt() {
+    assert_eq!(sqrt::sqrt(4.0), 2.0);
+    assert_eq!(sqrt::sqrt(9.0), 3.0);
     assert_eq!(sqrt::sqrt(16.0), 4.0);
 }
 
@@ -81,4 +84,54 @@ fn test_factorial() {
 fn test_gcd_lcm() {
     assert_eq!(gcd_lcm::gcd(48, 18), 6);
     assert_eq!(gcd_lcm::lcm(12, 15), 60);
+}
+
+#[test]
+fn test_mean() {
+    let data = [1.0, 2.0, 3.0, 4.0, 5.0];
+    assert_eq!(mean::mean(&data), 3.0);
+}
+
+#[test]
+fn test_median() {
+    let data = [1.0, 2.0, 3.0, 4.0, 5.0];
+    assert_eq!(median::median(&data), 3.0);
+}
+
+#[test]
+fn test_mode() {
+    let data = [1.0, 2.0, 2.0, 3.0, 4.0];
+    assert_eq!(mode::mode(&data), vec![2.0]);
+}
+
+#[test]
+fn test_std() {
+    let data = [1.0, 2.0, 3.0, 4.0, 5.0];
+    assert!((std::std(&data) - 1.5811388300841898).abs() < 1e-10); // approximate value
+}
+
+#[test]
+fn test_variance() {
+    let data = [1.0, 2.0, 3.0, 4.0, 5.0];
+    assert!((variance::variance(&data) - 2.5).abs() < 1e-10); // approximate value
+}
+
+#[test]
+fn test_skewness() {
+    let data = [1.0, 2.0, 3.0, 4.0, 5.0];
+    assert!((skewness::skewness(&data) - 0.0).abs() < 1e-10); // approximately 0
+}
+
+#[test]
+fn test_kurtosis() {
+    let data = [1.0, 2.0, 3.0, 4.0, 5.0];
+    let expected_kurtosis = -1.3;
+    assert!((kurtosis::kurtosis(&data) - expected_kurtosis).abs() < 0.1);
+}
+
+#[test]
+fn test_histogram() {
+    let data = [1.0, 2.0, 3.0, 4.0, 5.0];
+    let result = histogram::histogram(&data, 5);
+    assert_eq!(result.len(), 5);
 }
