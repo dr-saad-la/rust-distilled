@@ -1,3 +1,4 @@
+#![allow(dead_code)]
 /// Calculates the derivative of a function at a given point using central difference.
 ///
 /// # Arguments

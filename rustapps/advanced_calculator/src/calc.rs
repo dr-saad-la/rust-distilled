@@ -1,3 +1,4 @@
+#![allow(dead_code)]
 pub mod add;
 pub mod complex;
 pub mod divide;

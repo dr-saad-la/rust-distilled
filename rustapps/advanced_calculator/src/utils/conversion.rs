@@ -1,3 +1,4 @@
+#![allow(dead_code)]
 /// Converts degrees to radians.
 ///
 /// # Arguments

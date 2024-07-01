@@ -1,3 +1,4 @@
+#![allow(dead_code)]
 pub mod correlation;
 pub mod mean;
 pub mod median;

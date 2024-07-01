@@ -1,3 +1,4 @@
+#![allow(dead_code)]
 /// Creates a formatted banner with a specified separator, number of characters, and message.
 ///
 /// # Arguments
