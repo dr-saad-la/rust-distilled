@@ -2,10 +2,7 @@
    The match Statement in Rust
 </div>
 
-## Introduction
-
-- The `match` statement in Rust is a powerful control flow construct that allows you to compare a value against a series of patterns and execute code based on which pattern matches. It is similar to **switch** statements in other languages but much more powerful and flexible.
-
+The `match` statement in Rust is a powerful control flow construct that allows you to compare a value against a series of patterns and execute code based on which pattern matches. It is similar to **switch** statements in other languages but much more powerful and flexible.
 
 - The `match` statement is used to match:
     - **Integers**.
@@ -38,7 +35,6 @@ main();
 ```
 
     Three!
-
 
 - **Details of the match components**
 
