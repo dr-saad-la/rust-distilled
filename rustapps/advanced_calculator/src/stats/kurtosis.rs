@@ -18,7 +18,7 @@ use std::collections::HashMap;
 /// use advanced_calculator::stats::kurtosis::kurtosis;
 /// let data = [1.0, 2.0, 3.0, 4.0, 5.0];
 /// let result = kurtosis(&data);
-/// assert!((result - 1.7).abs() < 0.1);
+/// assert!((result - 1.7).abs() < 0.1); // approximate value
 /// ```
 pub fn kurtosis(data: &[f64]) -> f64 {
     let mean = mean::mean(data);

@@ -26,3 +26,14 @@ pub fn variance(data: &[f64]) -> f64 {
         .sum::<f64>()
         / data.len() as f64
 }
+
+// #[cfg(test)]
+// mod tests {
+//     use super::*;
+
+//     #[test]
+//     fn test_variance() {
+//         let data = [1.0, 2.0, 3.0, 4.0, 5.0];
+//         assert!((variance(&data) - 2.5).abs() < 1e-10); // approximate value
+//     }
+// }
