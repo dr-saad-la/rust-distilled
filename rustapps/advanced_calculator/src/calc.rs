@@ -1,5 +1,8 @@
 pub mod add;
+pub mod complex;
 pub mod divide;
+pub mod exp;
+pub mod hyperbolic;
 pub mod log;
 pub mod multiply;
 pub mod power;
