@@ -14,6 +14,7 @@
 /// # Examples
 ///
 /// ```
+/// use advanced_calculator::calc::divide::divide;
 /// let result = divide(10, 2);
 /// assert_eq!(result, Some(5));
 ///

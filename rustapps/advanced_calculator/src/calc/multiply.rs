@@ -12,6 +12,7 @@
 /// # Examples
 ///
 /// ```
+/// use advanced_calculator::calc::multiply::multiply;
 /// let result = multiply(4, 3);
 /// assert_eq!(result, 12);
 /// ```

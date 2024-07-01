@@ -12,6 +12,7 @@
 /// # Examples
 ///
 /// ```
+/// use advanced_calculator::calc::subtract::subtract;
 /// let result = subtract(5, 3);
 /// assert_eq!(result, 2);
 /// ```
