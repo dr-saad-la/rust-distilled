@@ -39,3 +39,25 @@ pub fn ln(a: f64) -> f64 {
 pub fn log10(a: f64) -> f64 {
     a.log10()
 }
+
+/// Calculates the logarithm of `a` with base `b` and returns the result.
+///
+/// # Arguments
+///
+/// * `a` - The number to calculate the logarithm for.
+/// * `b` - The base of the logarithm.
+///
+/// # Returns
+///
+/// The logarithm of `a` with base `b`.
+///
+/// # Examples
+///
+/// ```
+/// use advanced_calculator::calc::log::log_base;
+/// let result = log_base(8.0, 2.0);
+/// assert_eq!(result, 3.0);
+/// ```
+pub fn log_base(a: f64, b: f64) -> f64 {
+    a.log(b)
+}

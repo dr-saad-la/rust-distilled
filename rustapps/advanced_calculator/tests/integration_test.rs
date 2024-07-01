@@ -1,5 +1,6 @@
 use advanced_calculator::calc::{add, divide, multiply, subtract};
 use advanced_calculator::calc::{complex, exp, hyperbolic};
+use advanced_calculator::calc::{factorial, gcd_lcm};
 use advanced_calculator::calc::{log, power, sqrt, trig};
 use num_complex::Complex;
 
@@ -48,6 +49,7 @@ fn test_trig() {
 fn test_log() {
     assert_eq!(log::ln(1.0), 0.0);
     assert_eq!(log::log10(100.0), 2.0);
+    assert_eq!(log::log_base(8.0, 2.0), 3.0);
 }
 
 #[test]
@@ -68,4 +70,15 @@ fn test_complex() {
     let b = Complex::new(3.0, 4.0);
     let result = complex::add_complex(a, b);
     assert_eq!(result, Complex::new(4.0, 6.0));
+}
+
+#[test]
+fn test_factorial() {
+    assert_eq!(factorial::factorial(5), 120);
+}
+
+#[test]
+fn test_gcd_lcm() {
+    assert_eq!(gcd_lcm::gcd(48, 18), 6);
+    assert_eq!(gcd_lcm::lcm(12, 15), 60);
 }
