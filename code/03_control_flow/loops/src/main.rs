@@ -22,10 +22,10 @@ fn simple_loop() {
         counter += 1;
 
         // To exit the infinite loop when counter reaches 5
-        // if counter >= 5 {
-        //     println!("Exiting the loop.");
-        //     break;
-        // }
+        if counter >= 5 {
+            println!("Exiting the loop.");
+            break;
+        }
     }
 }
 
