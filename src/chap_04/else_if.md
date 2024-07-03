@@ -52,7 +52,6 @@ let my_var = if cond {result} else {the_other_result}
 
 ### Example
 
-
 ```Rust
 fn main() {
     let number = 5;
@@ -69,13 +68,10 @@ main();
 
     Is the number positive? true
 
-
-- In this example, the variable is_positive is assigned the value true if number > 0 and false otherwise. This is a concise way to handle simple conditions and bindings.
+In this example, the variable is_positive is assigned the value true if number > 0 and false otherwise. This is a concise way to handle simple conditions and bindings.
 
 ### Summary
 
-- if Statement: Executes a block of code if a specified condition is true.
-- else Statement: Specifies a block of code to execute if the if condition is false.
 - else if Statement: Allows for checking multiple conditions sequentially.
 - Using Conditions with let Bindings: Enables concise and expressive code by combining conditions with variable bindings.
 
