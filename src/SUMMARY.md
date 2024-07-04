@@ -43,7 +43,7 @@ Introduction
         -   [else if](chap_04/else_if.md)
         -   [If else expression](chap_04/if_else_expression.md)
     -   [Loops](chap_04/loops.md)
-        -   [loop](chap_04/loop.md)
+            -   [loop](chap_04/loop.md)
             -   [for loop](chap_04/for_loop.md)
             -   [while loop](chap_04/while_loop.md)
             -   [Exit loops](chap_04/exit_loop.md)
