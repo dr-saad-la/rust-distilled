@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Calculator</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        #result { margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <h1>Scientific Calculator</h1>
+    <input type="text" id="expression" placeholder="Enter expression" />
+    <button onclick="calculate()">Calculate</button>
+    <div id="result"></div>
+
+    <script>
+        async function calculate() {
+            const expression = document.getElementById('expression').value;
+            const response = await fetch('/calculate', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ expression })
+            });
+            const data = await response.json();
+            document.getElementById('result').innerText = `Result: ${data.result}`;
+        }
+    </script>
+</body>
+</html>
