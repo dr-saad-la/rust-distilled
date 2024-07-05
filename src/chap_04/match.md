@@ -15,10 +15,9 @@ The `match` statement in Rust is a powerful control flow construct that allows y
 ## Basic Syntax
 
 - The basic syntax of a `match` statement involves a value to match against:
-    - A series of match statements called arms enclosed in curly braces `{...}`.  
+    - A series of match statements called arms enclosed in curly braces `{...}`.
     - Patterns followed by the code to execute if the pattern matches.
     - The arms must be exhaustive
-
 
 ```Rust
 fn main() {
@@ -48,7 +47,6 @@ main();
     * 2: This is a pattern that matches if num is 2.
     * 3: This is a pattern that matches if num is 3.
     * _: This is a wildcard pattern that matches any value not matched by the previous patterns. It is often used as a catch-all or default case.
-
 4. `=>:`
     - The => symbol separates the pattern from the code that should be executed if the pattern matches. It can be read as "if this pattern matches, then do this".
 5. The **Expressions**: The expressions that get executed when a pattern matches.
@@ -58,7 +56,6 @@ main();
     * println!("Something else!"): Executes if num is any value not covered by the previous patterns.
 
 ### Match Arms
-
 - **Patterns:** Patterns can be literals, variables, wildcards, and more.
 - **Arms:** Each arm consists of a pattern and an expression to evaluate if the pattern matches.
 - **Wildcard:** The `_` pattern matches any value not matched by previous arms.
@@ -641,5 +638,3 @@ main();
 - Use the `|` operator to match multiple patterns in a single match arm.
 - Combine different patterns, including literals, ranges, and enum variants, to simplify your match statements.
 - Matching multiple patterns helps in handling similar cases together, making the code more concise and readable.
-
-
