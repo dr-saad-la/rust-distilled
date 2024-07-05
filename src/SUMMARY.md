@@ -5,7 +5,6 @@ Introduction
 -   [Introduction](intro.md)
 
 # Rust Environment Setup
-
 -   [Environment Setup](chap_01/introduction.md)
     -   [Rust Environment Setup](chap_01/install_rust.md)
     -   [Setup Rust Kernel](chap_01/setup_jupyterlab.md)
@@ -13,7 +12,6 @@ Introduction
     -   [Uninstall Rust](chap_01/uninstall_rust.md)
 
 # Rust Command Line Tools
-
 -   [Command Line Tool](chap_02/intro.md)
     -   [help](chap_02/cargo_help.md)
     -   [create rust app](chap_02/new.md)
@@ -43,16 +41,15 @@ Introduction
         -   [else if](chap_04/else_if.md)
         -   [If else expression](chap_04/if_else_expression.md)
     -   [Loops](chap_04/loops.md)
-            -   [loop](chap_04/loop.md)
-            -   [for loop](chap_04/for_loop.md)
+        -   [loop](chap_04/loop.md)
             -   [while loop](chap_04/while_loop.md)
+            -   [for loop](chap_04/for_loop.md)
             -   [Exit loops](chap_04/exit_loop.md)
                 -   [break](chap_04/break.md)
                 -   [continue](chap_04/continue.md)
     -   [Match statement](chap_04/match.md)
 
 # Rust Compound Data Types
-
 -   [Data Structures](chap_05/introduction.md)
     -   [Arrays](chap_05/arrays.md)
     -   [Vectors](chap_05/vectors.md)
@@ -63,7 +60,6 @@ Introduction
     -   [Iterations](chap_05/iterating.md)
 
 # Enumerations in Rust
-
 -   [Enum Data Type](chap_06/intro.md)
     -   [Creating Enums](chap_06/creating_enums.md)
     -   [Using Enums](chap_06/using_enums.md)
@@ -72,7 +68,6 @@ Introduction
     -   [Enum in Practice](chap_06/enum_project.md)
 
 # Ownership and Borrowing
-
 -   [Variables Scope](chap_07/intro.md)
     -   [Local Scope](chap_07/local_scope.md)
     -   [Static local Scope](chap_07/static_local.md)
