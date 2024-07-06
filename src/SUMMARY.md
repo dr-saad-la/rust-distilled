@@ -44,9 +44,9 @@ Introduction
         -   [loop](chap_04/loop.md)
             -   [while loop](chap_04/while_loop.md)
             -   [for loop](chap_04/for_loop.md)
-            -   [Exit loops](chap_04/exit_loop.md)
-                -   [break](chap_04/break.md)
-                -   [continue](chap_04/continue.md)
+        -   [Break and Continue](chap_04/break_continue_intro.md)
+            -   [break](chap_04/break.md)
+            -   [continue](chap_04/continue.md)
     -   [Match statement](chap_04/match.md)
 
 # Rust Compound Data Types
