@@ -42,11 +42,12 @@ Introduction
         -   [If else expression](chap_04/if_else_expression.md)
     -   [Loops](chap_04/loops.md)
         -   [loop](chap_04/loop.md)
-            -   [while loop](chap_04/while_loop.md)
-            -   [for loop](chap_04/for_loop.md)
+        -   [while loop](chap_04/while_loop.md)
+        -   [for loop](chap_04/for_loop.md)
         -   [Break and Continue](chap_04/break_continue_intro.md)
             -   [break](chap_04/break.md)
             -   [continue](chap_04/continue.md)
+        - [Advanced Loop Concepts](chap_04/advanced_loops_concepts.md)
     -   [Match statement](chap_04/match.md)
 
 # Rust Compound Data Types
