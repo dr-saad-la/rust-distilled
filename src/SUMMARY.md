@@ -52,7 +52,7 @@ Introduction
     -   [Match statement](chap_04/match.md)
 
 # Rust Compound Data Types
--   [Data Structures](chap_05/introduction.md)
+-   [Data Structures](chap_05/intro.md)
     -   [Arrays](chap_05/arrays.md)
     -   [Vectors](chap_05/vectors.md)
     -   [Tuples](chap_05/tuples.md)
