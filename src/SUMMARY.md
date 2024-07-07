@@ -3,6 +3,7 @@
 Introduction
 
 -   [Introduction](intro.md)
+-   [Rust history](rust-history.md)
 
 # Rust Environment Setup
 -   [Environment Setup](chap_01/introduction.md)
