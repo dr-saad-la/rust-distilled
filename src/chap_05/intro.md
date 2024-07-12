@@ -2,6 +2,10 @@
 
 In the realm of programming, data structures and collections are fundamental building blocks that allow us to efficiently organize, manage, and manipulate data. Rust, with its emphasis on safety and performance, provides a rich set of data structures and collections that cater to a wide variety of use cases. This chapter is dedicated to exploring these powerful tools, enabling you to harness their full potential in your Rust programs.
 
+## Compound Data Types
+
+Compound data types in Rust are types that can group multiple values into a single type. These types allow for more complex data structures by combining different types into a single data type. Commonly referred to data collections, data structures or aggregate types, they include arrays, vectors, tuples, hashmaps, hashsets and more. These types of data enable developers to create rich data models and manage collections of data efficiently.
+
 ### What We Will Cover
 
 This chapter will delve into the core data structures and collections provided by Rust, examining their characteristics, use cases, and best practices. Our exploration will include:
@@ -64,6 +68,3 @@ By the end of this chapter, you will have a comprehensive understanding of the e
 ### Importance of Data Structures
 
 Efficient data handling is critical for developing high-performance applications. Choosing the right data structure can significantly impact the performance and scalability of your software. Rust’s standard library offers a variety of collections that are optimized for different scenarios, ensuring that you can write code that is both efficient and safe.
-
-
-
