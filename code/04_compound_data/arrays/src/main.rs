@@ -69,10 +69,10 @@ fn implicit_array_type_inference() {
 // Access Array Elements
 fn access_array_elements() {
     // Define an array
-    let rand_arr: [f64; 10] = gen_rand_floats(10, 0)
+    let arr: [f64; 10] = gen_rand_floats(10, 0)
         .try_into()
         .expect("Slice with incorrect length");
-    let arr = &rand_arr[..];
+
     // Accessing elements by index
     let first = arr[0];
     let second = arr[1];
@@ -93,7 +93,7 @@ fn access_array_elements() {
         println!("Element at index {}: {}", index, element);
     }
 
-    let [first, second, .., last] = rand_arr;
+    let [first, second, .., last] = arr;
     println!("First: {}, Second: {}, Last: {}", first, second, last);
 
     // Safe access with get method

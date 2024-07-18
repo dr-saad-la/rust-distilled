@@ -197,6 +197,7 @@ Verify the Installation: To ensure Rust is installed correctly, run the followin
 ```sh
 rustc --version
 ```
+
 ### Checking the Installation
 
 After successfully completing the Rust installation, you will have four new commands available in your command line tool. These commands are essential for managing your Rust environment, compiling code, generating documentation, and handling packages. It is important to verify that each of these commands is properly installed and configured.
