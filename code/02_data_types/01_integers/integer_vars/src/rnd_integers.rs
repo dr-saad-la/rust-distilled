@@ -1,4 +1,6 @@
 use rand;
+
+use rand::Rng;
 // Advanced Section
 // ================
 
@@ -6,8 +8,9 @@ pub fn generate_random_signed_integer<T>() -> T
 where
     rand::distributions::Standard: rand::distributions::Distribution<T>,
 {
-    rand::random()
+    rand::thread_rng().gen()
 }
+
 // Print random generated signed integers
 pub fn print_rnd_integers() {
     let random_integer_i8: i8 = generate_random_signed_integer();

@@ -1,36 +1,50 @@
+//================================================================================
+//      Author:         Dr. Saad Laouadi
+//      Course:         Rust Distilled
+//      Chapter 02:     Primitive Data Types
+//      Section:        Numeric Data
+//      lesson:         Integers
+//
+//      © copy-right: Dr. Saad Laouadi
+//================================================================================
+
 mod int_operations;
+mod ints_info;
 mod rnd_integers;
+mod unsigned_ints;
 
 fn main() {
     // Invoke the print_signed_integers() function
-    make_separator();
+    banner("*", 52, "Integers in Rust");
     print_signed_integers();
-    make_separator();
+    make_separator(52);
     signed_integers_size();
-    make_separator();
+    make_separator(52);
 
     // Invoke unsigned functions
     print_unsigned_integers();
-    make_separator();
+    make_separator(52);
     unsigned_integers_size();
-    make_separator();
 
+    banner("*", 52, "Generate Random Integers");
     // Generate a random signed integers
     rnd_integers::print_rnd_integers();
 
     // Integer Operations
-    make_separator();
+    make_separator(52);
     int_operations::add_ints();
     int_operations::sub_ints();
     int_operations::mul_ints();
     int_operations::divide_ints();
     int_operations::remainder_ints();
-    make_separator();
-}
+    banner("*", 52, "Detailed Information about Integers in Rust;;;");
+    ints_info::ints_types();
 
-// Simple function that prints `=` to pretify the console output
-fn make_separator() {
-    println!("{}", "*".repeat(52));
+    ints_info::ints_info();
+
+    ints_info::min_max_ints();
+
+    unsigned_ints::get_unsigned_ints_info();
 }
 
 // a function that prints signed integers
@@ -113,4 +127,16 @@ fn unsigned_integers_size() {
         u64_val,
         std::mem::size_of::<u64>()
     );
+}
+
+// Function to create a formatted banner
+fn banner(sep: &str, nchar: usize, message: &str) {
+    let sep = sep.repeat(nchar);
+    let message = format!("{:^width$}", message, width = nchar);
+    println!("\n{}\n{}\n{}", sep, message, sep);
+}
+
+// make separator function
+fn make_separator(nchar: usize) {
+    println!("{}", "*".repeat(nchar))
 }
