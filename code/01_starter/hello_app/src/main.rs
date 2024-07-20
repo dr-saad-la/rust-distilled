@@ -16,7 +16,7 @@ fn main() {
 
 // simple function
 fn simple_func() {
-    println!("Hello Rust programming");
+    println!("Hello Rust programming!");
     println!("Rust programming is an awesome language");
 }
 
