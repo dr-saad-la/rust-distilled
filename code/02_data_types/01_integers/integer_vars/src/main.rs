@@ -37,14 +37,17 @@ fn main() {
     int_operations::mul_ints();
     int_operations::divide_ints();
     int_operations::remainder_ints();
+
     banner("*", 52, "Detailed Information about Integers in Rust;;;");
     ints_info::ints_types();
-
     ints_info::ints_info();
 
     ints_info::min_max_ints();
 
+    // Unsigned Integers
     unsigned_ints::get_unsigned_ints_info();
+
+    unsigned_ints::unsigned_type_and_memsize();
 }
 
 // a function that prints signed integers
